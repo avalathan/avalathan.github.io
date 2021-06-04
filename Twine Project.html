@@ -16,8 +16,8 @@
 tw-sidebar{
     display: none;
 }
-
-	</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Campsite" tags="" position="129,205" size="100,100">You have successfully reached your first campsite! It is getting dark soon and you must budget your time so you are not setting up in the dark. Choose your first task.
+ 
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Campsite" tags="" position="129,205" size="100,100">You have successfully reached your first campsite! It is getting dark soon and you must budget your time so you are not setting up in the dark. Choose your first task.
 {
 &lt;a href=&quot;default.asp&quot;&gt;
 &lt;img src=&quot;camp.jpg&quot; style=&quot;width:200px;height:200px;&quot;&gt;
@@ -27,16 +27,6 @@ tw-sidebar{
 [[Set up your tent-&gt; Tent]]
 [[Put on warm clothes before it gets cold-&gt; Clothes]]
 [[Start a fire-&gt;Fire]] </tw-passagedata><tw-passagedata pid="2" name="Water" tags="" position="376,2" size="100,100">You grab your 5 liter water bag and head down to the creek. The water is flowing fast so you are careful to not slip on the rocks. You collect one bucket of water but your are not sure whether you have enough. 
-{
-&lt;a href=&quot;default.asp&quot;&gt;
-&lt;img src=&quot;creek.jpg&quot; style=&quot;width:200px;height:200px;&quot;&gt;
-&lt;/a&gt;
-}
-[[Return to camp-&gt;Campsite]] 
-	[[You decide to wash your hair while you are at the creek-&gt; Wash Hair]]
-(set: $water to 0)
-(set: $hair to 0)
-
 {
 |TheWater&gt;[
 	(link: &quot;Collect Water&quot;)[
@@ -50,6 +40,16 @@ tw-sidebar{
 	]
 	}
 	&lt;!--Water&#39;s current value: |output&gt;[$water]--&gt;
+{
+&lt;a href=&quot;default.asp&quot;&gt;
+&lt;img src=&quot;creek.jpg&quot; style=&quot;width:200px;height:200px;&quot;&gt;
+&lt;/a&gt;
+}
+(set: $water to 0)
+(set: $hair to 0)
+[[Return to camp-&gt;Campsite]] 
+[[You decide to wash your hair while you are at the creek-&gt; Wash Hair]]
+
 </tw-passagedata><tw-passagedata pid="3" name=" Tent" tags="" position="291,427" size="100,100">You take out all the pieces to your tent and begin to assemble it. First you stake the ground tarp down. Next you begin to assemble your poles but you might need some help. You see another group of hikers arriving at the campsite and decide to ask for some help.
 {
 {
